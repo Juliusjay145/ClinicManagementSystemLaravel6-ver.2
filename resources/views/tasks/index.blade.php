@@ -15,7 +15,7 @@
         $('#calendar').fullCalendar({
             // put your options and callbacks here
             events : [
-                @foreach($tasks as $task)
+                @foreach($tasks ?? '' as $task)
                 {
                     title : '{{ $task->name }}',
                     title : '{{ $task->task_description }}',
